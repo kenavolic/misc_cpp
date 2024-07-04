@@ -56,8 +56,6 @@ $ g++ -o main compute.o main.cpp -I. -lcudart
 
 ### Debugging
 
-## Debugging
-
 ```shell
 $ export CUDA_ENABLE_COREDUMP_ON_EXCEPTION=1
 $ export CUDA_ENABLE_CPU_COREDUMP_ON_EXCEPTION=0

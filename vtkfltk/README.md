@@ -11,7 +11,7 @@ Better projects exist to integrate VTK within an FLTK GUI:
 
 ## Usage
 
-Assuming it s contained in `MyFLTKVTKContainerWidget` inheriting from
+Assuming it is contained in `MyFLTKVTKContainerWidget` inheriting from
 some `FlWidget`
 
 ```cpp
