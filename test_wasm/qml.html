@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple template</title>
+  </head>
+  <body>
+    <script>
+     WebAssembly.instantiateStreaming(fetch("build/qml.wasm"), importObject).then(
+  (results) => {
+    // Do something with the results!
+  },
+);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple template</title>
+  </head>
+  <body>
+    <script>
+      WebAssembly.instantiateStreaming(
+        fetch('build/calc.wasm'),
+      ).then(result => {
+        const add = result.instance.exports.add;
+        const sub = result.instance.exports.sub;
+        console.log(add(1,2));
+        console.log(sub(2,1));
+      });
+    </script>
+  </body>
+</html>
